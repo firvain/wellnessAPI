@@ -3,7 +3,7 @@ from passlib.context import CryptContext
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-from .database import Base
+from app.database import Base
 from enum import Enum
 
 

@@ -6,9 +6,9 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from jwt import PyJWTError
 
-from ..crud import authenticate_user
-from ..database import get_db
-from ..schemas import Login
+from app.crud import authenticate_user
+from app.database import get_db
+from app.schemas import Login
 
 SECRET_KEY = "asdasdawe12231Q2"
 ALGORITHM = "HS256"
